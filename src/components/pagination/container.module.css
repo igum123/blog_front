@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 50px;
+    display: block;
+    text-decoration: none;
+}
+
+.selected.selected {
+    cursor: default;
+    font-weight: bold;
+}

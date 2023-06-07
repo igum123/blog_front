@@ -1,0 +1,41 @@
+.container {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.title {
+    width: 100%;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: normal;
+}
+
+.link::after {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    content: "";
+    width: 20%;
+    height: 3px;
+    background: var(--primary);
+}
+
+.description {
+    color: #686666;
+}
+
+.imgContainer {
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}

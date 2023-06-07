@@ -17,11 +17,12 @@ const defaultProps = {
 function Navigation({ domaine, user }) {
     const [showBlog, setShowBlog] = useState(false);
     useEffect(() => {
+        /*
         Api.get('/api/v1/blog/articles').then((response) => {
             if (response.response.data.items.length > 0) {
                 setShowBlog(true);
             }
-        });
+        });*/
     }, []);
     return (
         <div className={Styles.container}>

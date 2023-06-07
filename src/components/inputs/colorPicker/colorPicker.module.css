@@ -1,0 +1,43 @@
+.container {
+    width: calc(100% - 30px);
+    height: 50px;
+    border-bottom: 2px solid lightgray;
+    outline: none;
+    color: #fff;
+    background: white;
+    position: relative;
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.container:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+
+
+
+
+.colorInput{
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.textInput{
+    outline: none;
+    text-align: left;
+    height: calc(100% - 4px);
+    width: calc(100% - 16px);
+    padding-left: 10px;
+    color: black;
+    border: none;
+    background: white;
+}

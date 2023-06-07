@@ -1,0 +1,26 @@
+.footer {
+    background: black;
+    color: white;
+    width: calc(100% - 40px);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    margin: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        padding: 5px;
+        width: calc(100% - 10px);
+    }
+
+    .item {
+        margin: 10px;
+    }
+}

@@ -1,24 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 
-import styles from './container.module.css';
+import Styles from './container.module.css';
 
 const propTypes = {
-    domaine: PropTypes.string.isRequired
+    domaine: PropTypes.string.isRequired,
+    user: PropTypes.shape({}),
+    article: PropTypes.shape({
+
+    })
 };
 
 const defaultProps = {
+    user: null,
+    article: null
 };
 
-function Index({ domaine }) {
+function Article({ domaine, user, article }) {
     return (
-        <div className={styles.container}>
-
+        <div className={Styles.container}>
+            {article && <div dangerouslySetInnerHTML={{ __html: article.content }}></div>}
         </div>
     );
 }
 
-Index.propTypes = propTypes;
-Index.defaultProps = defaultProps;
+Article.propTypes = propTypes;
+Article.defaultProps = defaultProps;
 
-export default Index;
+export default Article;

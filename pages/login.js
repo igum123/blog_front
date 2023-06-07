@@ -1,29 +1,33 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Page from '../../src/views/category';
-import Head from '../../src/components/head';
-import Config from '../../src/config.json';
-import Navigation from '../../src/components/navigation/navigation';
+import Page from '../src/views/login';
+import Head from '../src/components/head';
+import Config from '../src/config.json';
+import Navigation from '../src/components/navigation/navigation';
 
 const propTypes = {
-    domaine: PropTypes.string.isRequired
+    domaine: PropTypes.string.isRequired,
+    user: PropTypes.shape({
+
+    })
 };
 
 const defaultProps = {
+    user: null
 };
 
-const Index = ({ domaine }) => {
+const Index = ({ user, domaine }) => {
     return (
         <Fragment>
             <Head
                 title={`${Config.APP_NAME}`}
-                description={`Apprenez à créer vos jeux vidéos`}
+                description={`Liste des articles`}
                 url="/"
                 img={`${process.env.NEXT_PUBLIC_API}/api/img/${Config.APP_NAME}.jpg`}
                 domaine={domaine} />
             <div className="body-container">
-                <Navigation domaine={domaine} />
-                <Page domaine={domaine} />
+                <Navigation domaine={domaine} user={user} />
+                <Page domaine={domaine} user={user} />
             </div>
         </Fragment>
     );

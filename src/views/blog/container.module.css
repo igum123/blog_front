@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.articles {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .articles {
+        width: 100%;
+    }
+}

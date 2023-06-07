@@ -13,7 +13,7 @@ const defaultProps = {
 function Index({ domaine }) {
     return (
         <div className={styles.container}>
-
+            index
         </div>
     );
 }

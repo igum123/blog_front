@@ -1,0 +1,12 @@
+
+.item{
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.label{
+    margin: 10px;
+    margin-left: 10px;
+}
