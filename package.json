@@ -1,0 +1,32 @@
+{
+  "name": "blog_front",
+  "version": "1.0.0",
+  "description": "FRONT for a simple blog",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igum123/blog_front.git"
+  },
+  "author": "Loïc PERDRIEAU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igum123/blog_front/issues"
+  },
+  "homepage": "https://github.com/igum123/blog_front#readme",
+  "dependencies": {
+    "cookies-next": "^2.1.1",
+    "next": "^13.4.4",
+    "next-remove-imports": "^1.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-next": "^13.4.4"
+  }
+}
