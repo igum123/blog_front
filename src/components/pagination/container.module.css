@@ -13,7 +13,12 @@
     text-decoration: none;
 }
 
+.number:hover {
+    text-decoration: underline;
+}
+
 .selected.selected {
     cursor: default;
     font-weight: bold;
+    text-decoration: none;
 }

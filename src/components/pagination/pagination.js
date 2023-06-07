@@ -32,7 +32,7 @@ function Pagination({ current, max, url }) {
             )}
             {pageToShow && pageToShow.map((pageNb) => {
                 return (
-                    <a key={pageNb} className={`${Styles.number} ${pageNb === current ? Styles.selected : ''}`} href={`${url}${pageNb}`}>
+                    <a key={pageNb} className={`${Styles.number} ${pageNb === current ? Styles.selected : ''}`} href={pageNb === current ? undefined : `${url}${pageNb}`}>
                         {pageNb + 1}
                     </a>
                 );

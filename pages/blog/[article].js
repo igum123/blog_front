@@ -41,6 +41,11 @@ export async function getServerSideProps(ctx) {
     const articleUrl = ctx.req.url.substring(ctx.req.url.lastIndexOf('/') + 1);
     let result = await fetch(`${domaine}/api/v1/blog/article/${articleUrl}`, opts);
     let formatResponse = (await result.json());
+    if (formatResponse.error) {
+        return {
+            notFound: true,
+        };
+    }
     let article = formatResponse.data;
     return {
         props: { article }

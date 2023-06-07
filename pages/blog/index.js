@@ -50,6 +50,11 @@ export async function getServerSideProps(ctx) {
     const opts = { headers: { cookie: ctx.req.headers.cookie } };
     let result = await fetch(`${domaine}/api/v1/blog/articles${ctx.query && ctx.query.page ? `?page=${ctx.query.page}` : ''}`, opts);
     let formatResponse = (await result.json());
+    if (formatResponse.error || !formatResponse.data || !formatResponse.data.items || !formatResponse.data.items.length) {
+        return {
+            notFound: true,
+        };
+    }
     let articles = formatResponse.data;
     return {
         props: { articles }
