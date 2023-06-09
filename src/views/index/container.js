@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './container.module.css';
 
+import Newsletters from "../../components/newsletters";
+
 const propTypes = {
     domaine: PropTypes.string.isRequired
 };
@@ -14,6 +16,7 @@ function Index({ domaine }) {
     return (
         <div className={styles.container}>
             index
+            <Newsletters />
         </div>
     );
 }

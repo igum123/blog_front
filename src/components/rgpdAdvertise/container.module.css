@@ -1,0 +1,16 @@
+.advertise{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    background: white;
+    border-top: 1px solid grey;
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.advertise.show{
+    display: flex;
+}
