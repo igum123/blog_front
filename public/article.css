@@ -1,14 +1,15 @@
 h1 {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
 h2 {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: normal;
     margin-top: 50px;
+    font-weight: bold;
 }
 
 h2::after {
@@ -21,8 +22,37 @@ h2::after {
     background: var(--primary);
 }
 
+h3 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3::after {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    content: "";
+    width: 20%;
+    height: 3px;
+    background: var(--primary);
+}
+
+h4 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h5 {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 p {
-    color: #686666;
+    color: #dedede;
 }
 
 img {

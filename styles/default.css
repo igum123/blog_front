@@ -1,9 +1,9 @@
 :root {
-    --primary: #F18A53;
-    --primaryHover: #dd7339;
+    --primary: rgb(115, 74, 153);
+    --primaryHover: rgb(155, 102, 203);
     --secondary: #D60B55;
-    --textColor: rgb(20, 20, 20);
-    --background: #FCFCFC;
+    --textColor: rgb(255, 255, 255);
+    --background: #1b1b1b;
     --background2: #FCFCFC;
     --font-size: 16px;
     --gradient: to bottom, 0 white 50% white 100% #F18A53
@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: "customFont";
-    src: local('customFont'), url("/Montserrat-Regular") format("truetype");
+    src: local('customFont'), url("/Montserrat-Regular.ttf") format("truetype");
 }
 
 html,
@@ -52,6 +52,10 @@ a {
     color: var(--primary);
     font-weight: bold;
     text-decoration: none;
+}
+
+b {
+    font-weight: normal;
 }
 
 a:hover {

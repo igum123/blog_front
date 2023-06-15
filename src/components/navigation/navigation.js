@@ -15,23 +15,15 @@ const defaultProps = {
 };
 
 function Navigation({ domaine, user }) {
-    const [showBlog, setShowBlog] = useState(false);
-    useEffect(() => {
-        /*
-        Api.get('/api/v1/blog/articles').then((response) => {
-            if (response.response.data.items.length > 0) {
-                setShowBlog(true);
-            }
-        });*/
-    }, []);
     return (
         <div className={Styles.container}>
             <a className={Styles.imgContainer} href={`${domaine}`}>
-                <img className={Styles.logo} src={`${domaine}/img/logo_white.png`} alt="Logo MeetCo" />
+                {false && <img className={Styles.logo} src={`${domaine}/img/logo_white.png`} alt="Logo MeetCo" />}
+                <p className={Styles.title}>LOWEN-GAME</p>
             </a>
-            {showBlog && <nav className={Styles.nav}>
+            <nav className={Styles.nav}>
                 <a className={Styles.link} href={`${domaine}/blog`}>BLOG</a>
-            </nav>}
+            </nav>
         </div>
     );
 }

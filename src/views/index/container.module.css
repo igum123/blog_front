@@ -3,3 +3,107 @@
     text-align: center;
     background: transparent;
 }
+
+
+.head {}
+
+
+.blockContainer {
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+    .blockContainer {
+        width: 90%;
+    }
+}
+
+.intro {
+    display: flex;
+}
+
+@media screen and (max-width: 720px) {
+    .intro {
+        flex-direction: column;
+    }
+}
+
+.part {
+    width: calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .part {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.partImg {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .partImg {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.blackBackground {
+    background-color: black;
+}
+
+.advantage {
+    display: flex;
+}
+
+@media screen and (max-width: 720px) {
+    .advantage {
+        flex-direction: column;
+    }
+}
+
+.block {
+    width: 30%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 720px) {
+    .block {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+}
+
+.block .img {
+    font-size: 70px;
+    color: var(--primary);
+}
+
+
+
+
+.whoiam {}
+
+.whoiamImg {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: bold;
+}

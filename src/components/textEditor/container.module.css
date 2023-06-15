@@ -21,6 +21,7 @@
     cursor: pointer;
     width: 100%;
     transition: 0.5s;
+    color: white;
 }
 
 .tools>.tool:last-child {

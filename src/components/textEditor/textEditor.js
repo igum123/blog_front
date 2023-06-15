@@ -86,7 +86,7 @@ function TextEditor({ onChange, value, onImageClick }) {
                     ref={fileInputRef}
                     className={Styles.fileInput}
                     type="file"
-                    accept="image/jpeg"
+                    accept="image/jpeg, image/png"
                     onChange={async (e) => {
                         const file = e.target.files[0];
                         console.log(file)
@@ -132,7 +132,8 @@ function TextEditor({ onChange, value, onImageClick }) {
                     padding={15}
                     style={{
                         fontSize: 14,
-                        backgroundColor: "white"
+                        backgroundColor: "transparent",
+                        color: 'white'
                     }} />
             )}
         </div>

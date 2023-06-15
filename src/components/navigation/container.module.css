@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: var(--primary);
     filter: drop-shadow(0 -12px 10px grey);
     position: sticky;
     top: 0px;
@@ -12,10 +12,15 @@
     z-index: 999;
 }
 
+.title {
+    color: white;
+}
+
 .imgContainer {
     margin-left: 20px;
     flex: 2;
     height: 110%;
+    color: white;
 }
 
 .logo {

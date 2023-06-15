@@ -4,10 +4,10 @@
     text-align: left;
     height: calc(100%);
     width: calc(100% - 4px);
-    color: black;
+    color: white;
     border: 2px solid var(--primary);
     border-radius: 25px;
-    background: white;
+    background: var(--background);
     position: relative;
     overflow: hidden;
     height: 38px;
@@ -34,7 +34,7 @@
     text-align: left;
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    color: black;
+    color: white;
     border: none;
     background: transparent;
 }
